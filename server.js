@@ -8,7 +8,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: process.env.FRONTEND_URL || "*",
+    origin: "hserver-emdmhzb4bgfcf6ac.eastus-01.azurewebsites.net" || "*",
     methods: ["GET", "POST"],
     credentials: true
   },
